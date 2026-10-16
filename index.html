@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Aging Consortium</title>
+<meta name="description" content="An open, volunteer-run community of researchers who build AI and researchers who study aging. Members write shared guidelines for AI in aging research and build open datasets, models and agents for the whole field, so that aging and longevity research moves faster and holds up.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="canonical" href="https://ai4aging-consortium.github.io/">
+<link rel="icon" href="assets/brand/ai4aging_favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/ai4aging_favicon_32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/brand/ai4aging_favicon_16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/ai4aging_favicon_180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI for Aging Consortium">
+<meta property="og:title" content="AI for Aging Consortium">
+<meta property="og:description" content="An open, volunteer-run community of researchers who build AI and researchers who study aging. Members write shared guidelines for AI in aging research and build open datasets, models and agents for the whole field, so that aging and longevity research moves faster and holds up.">
+<meta property="og:url" content="https://ai4aging-consortium.github.io/">
+<meta property="og:image" content="https://ai4aging-consortium.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI for Aging Consortium logo and name on white">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for Aging Consortium">
+<meta name="twitter:description" content="An open, volunteer-run community of researchers who build AI and researchers who study aging. Members write shared guidelines for AI in aging research and build open datasets, models and agents for the whole field, so that aging and longevity research moves faster and holds up.">
+<meta name="twitter:image" content="https://ai4aging-consortium.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="AI for Aging Consortium logo and name on white">
+<link rel="preload" href="assets/fonts/inter-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>
+  // Decide before first paint whether the motion version runs.
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { d.classList.add('reduce'); return; }
+    d.classList.add('motion');
+    var seen = false;
+    try { seen = sessionStorage.getItem('a2-hero') === '1'; } catch (e) { seen = false; }
+    if (!seen) d.classList.add('hero-anim');
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="AI for Aging Consortium, back to top">
+      <svg class="brand-mark" viewBox="0 -29.5 129.5 129.5" width="36" height="36" aria-hidden="true" focusable="false"><rect class="m-tile" x="0" y="0" width="100" height="100" fill="#14213D"/><path class="m-letter" fill="#FFFFFF" fill-rule="evenodd" d="M30.044117647058822 41.62867647058824Q30.297794117647058 37.40073529411765 32.158088235294116 34.61029411764706Q34.018382352941174 31.81985294117647 36.893382352941174 30.128676470588236Q39.768382352941174 28.4375 43.362132352941174 27.71875Q46.955882352941174 27.0 50.591911764705884 27.0Q53.88970588235294 27.0 57.27205882352941 27.465073529411764Q60.654411764705884 27.93014705882353 63.44485294117647 29.28308823529412Q66.23529411764706 30.63602941176471 68.0110294117647 33.04595588235294Q69.78676470588235 35.45588235294118 69.78676470588235 39.430147058823536V62.1764705882353Q69.78676470588235 65.13602941176471 70.125 67.84191176470588Q70.46323529411765 70.54779411764706 71.30882352941177 71.90073529411765H59.13235294117647Q58.794117647058826 70.88602941176471 58.5827205882353 69.82904411764707Q58.37132352941177 68.77205882352942 58.286764705882355 67.67279411764706Q55.411764705882355 70.63235294117648 51.52205882352941 71.81617647058823Q47.63235294117647 73.0 43.57352941176471 73.0Q40.44485294117647 73.0 37.73897058823529 72.2389705882353Q35.033088235294116 71.4779411764706 33.00367647058823 69.87132352941177Q30.97426470588235 68.26470588235294 29.832720588235293 65.8125Q28.691176470588236 63.360294117647065 28.691176470588236 59.977941176470594Q28.691176470588236 56.25735294117648 30.001838235294116 53.84742647058824Q31.3125 51.4375 33.38419117647059 50.0Q35.455882352941174 48.5625 38.119485294117645 47.84375Q40.783088235294116 47.125 43.48897058823529 46.70220588235294Q46.19485294117647 46.279411764705884 48.81617647058823 46.02573529411765Q51.4375 45.77205882352942 53.466911764705884 45.26470588235295Q55.49632352941177 44.75735294117648 56.68014705882353 43.78492647058824Q57.86397058823529 42.8125 57.779411764705884 40.95220588235294Q57.779411764705884 39.00735294117647 57.1452205882353 37.86580882352941Q56.51102941176471 36.724264705882355 55.45404411764706 36.09007352941177Q54.39705882352941 35.45588235294118 53.001838235294116 35.24448529411765Q51.606617647058826 35.03308823529412 50.0 35.03308823529412Q46.44852941176471 35.03308823529412 44.419117647058826 36.555147058823536Q42.38970588235294 38.07720588235294 42.05147058823529 41.62867647058824ZM57.779411764705884 50.50735294117648Q57.018382352941174 51.18382352941177 55.876838235294116 51.56433823529412Q54.73529411764706 51.94485294117648 53.424632352941174 52.19852941176471Q52.11397058823529 52.45220588235294 50.67647058823529 52.62132352941177Q49.23897058823529 52.790441176470594 47.80147058823529 53.044117647058826Q46.44852941176471 53.29779411764706 45.137867647058826 53.720588235294116Q43.82720588235294 54.14338235294118 42.85477941176471 54.86213235294118Q41.88235294117647 55.58088235294118 41.290441176470594 56.680147058823536Q40.69852941176471 57.779411764705884 40.69852941176471 59.47058823529412Q40.69852941176471 61.07720588235294 41.290441176470594 62.1764705882353Q41.88235294117647 63.27573529411765 42.897058823529406 63.90992647058824Q43.91176470588235 64.54411764705883 45.26470588235294 64.79779411764707Q46.61764705882353 65.0514705882353 48.05514705882353 65.0514705882353Q51.606617647058826 65.0514705882353 53.5514705882353 63.867647058823536Q55.49632352941177 62.68382352941177 56.4264705882353 61.03492647058824Q57.356617647058826 59.38602941176471 57.568014705882355 57.69485294117648Q57.779411764705884 56.00367647058824 57.779411764705884 54.9889705882353Z"/><rect class="m-exp" x="103.5" y="-29.5" width="26" height="26" fill="#14213D"/></svg>
+      <span>AI for Aging Consortium</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <a href="#vision" data-spy="vision">Vision</a>
+      <a href="#how" data-spy="how">How it works</a>
+      <a href="#pillars" data-spy="pillars">Pillars</a>
+      <a href="#papers" data-spy="papers">White papers</a>
+      <a href="#join" data-spy="join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap grid">
+      <h1 id="hero-title" class="hero-title">An open community for AI in aging and longevity research</h1>
+      <p class="lede hero-lede">The AI for Aging Consortium brings together researchers who build AI systems and researchers who study aging. Its members write shared guidelines for how AI is built, evaluated and reported in the field, and build open resources that any laboratory can use, so that aging and longevity research moves faster and its findings hold up.</p>
+      <p class="hero-links">
+        <a class="link" href="#how">See how the consortium works</a>
+        <a class="link" href="#film" data-play-film>Watch the film</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="vision" aria-labelledby="vision-h">
+    <div class="wrap grid">
+      <h2 id="vision-h" class="col-h">Vision</h2>
+      <div class="prose col-body lede-size">
+        <p>Over the next ten years the consortium&rsquo;s members will agree on how AI should be built, evaluated and reported in aging research, build the datasets, models and agents the field needs, and use them to shorten the path from data to tested interventions. The work spans human cohorts, clinical studies, cells, model organisms and intervention studies.</p>
+        <p>Aging research is slow for reasons that AI could help with. Outcomes arrive years or decades after the measurements meant to predict them, data sit in separate laboratories in formats that do not match, and published models are hard to rerun on new data. Each group also decides for itself how to test and report its AI, so results are hard to compare. No single laboratory can fix these problems, but a community that shares its data, tools and standards can.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how" id="how" aria-labelledby="how-h">
+    <div class="wrap grid how-head">
+      <h2 id="how-h" class="col-h">How the consortium works</h2>
+      <p class="col-body lede-size intro">Two research communities work within shared guidelines to build open resources for the whole field.</p>
+    </div>
+
+    <div class="scene" id="scene">
+      <div class="stage">
+        <div class="wrap stage-inner">
+          <figure class="scene-figure">
+            <div class="scene-canvas">
+<!-- scene:landscape:start -->
+<svg class="scene-svg" data-layout="landscape" viewBox="0 0 1000 358" role="img" aria-label="Researchers who build AI systems and researchers who study aging meet in one open community. Guidelines for how AI is built, evaluated and reported frame the work. Members build and share open datasets, open models and AI agents, a benchmark and an open index of AI systems. Evidence from every resource goes into the white papers, which carry the guidelines. The resources are open to the whole field, to make aging and longevity research faster and more reliable." xmlns="http://www.w3.org/2000/svg"><g class="el" data-id="community" data-beat="1" data-kind="frame" data-pillar="community"><rect class="track" x="6" y="6" width="784" height="344" rx="6"/><rect class="line frame" x="6" y="6" width="784" height="344" rx="6"/><text class="t-name" x="22" y="30" font-size="16" text-anchor="start">Community</text><text class="t-sub" x="115" y="30" font-size="14" text-anchor="start">open individual membership</text></g><g class="el" data-id="members_ai" data-beat="1" data-kind="members" data-side="ai" data-from="-250"><g class="m-shift"><rect class="m-sq m-ai" x="294" y="300" width="10" height="10"/><rect class="m-sq m-ai" x="310" y="300" width="10" height="10"/><rect class="m-sq m-ai" x="326" y="300" width="10" height="10"/><rect class="m-sq m-ai" x="342" y="300" width="10" height="10"/><rect class="m-sq m-ai" x="358" y="300" width="10" height="10"/><rect class="m-sq m-ai" x="374" y="300" width="10" height="10"/><text class="t-name" x="384" y="336" font-size="15" text-anchor="end">Researchers who build AI</text></g></g><g class="el" data-id="members_age" data-beat="1" data-kind="members" data-side="age" data-from="250"><g class="m-shift"><rect class="m-sq m-age" x="412.6" y="300.6" width="8.8" height="8.8"/><rect class="m-sq m-age" x="428.6" y="300.6" width="8.8" height="8.8"/><rect class="m-sq m-age" x="444.6" y="300.6" width="8.8" height="8.8"/><rect class="m-sq m-age" x="460.6" y="300.6" width="8.8" height="8.8"/><rect class="m-sq m-age" x="476.6" y="300.6" width="8.8" height="8.8"/><rect class="m-sq m-age" x="492.6" y="300.6" width="8.8" height="8.8"/><text class="t-name" x="412" y="336" font-size="15" text-anchor="start">Researchers who study aging</text></g></g><g class="el" data-id="guidelines" data-beat="2" data-kind="field" data-pillar="guidelines"><rect class="field" x="20" y="44" width="756" height="232" rx="4"/><text class="t-name" x="36" y="73" font-size="18" text-anchor="start">Guidelines</text><text class="t-sub" x="36" y="93" font-size="14" text-anchor="start">how AI is built, evaluated and reported</text></g><g class="el" data-id="p_rise" data-beat="3" data-kind="path"><path class="track" d="M398,296 V218"/><path class="line" d="M398,296 V218"/><polygon class="arrow" points="394.40,225.65 398.00,217.55 401.60,225.65"/><text class="t-path" x="406" y="272" font-size="13" text-anchor="start">build and share</text></g><g class="el" data-id="p_c_datasets" data-beat="3" data-kind="path" data-route="M398,296 V240 H102 V218"><path class="track" d="M398,240 H102 V218"/><path class="line" d="M398,240 H102 V218"/><polygon class="arrow" points="98.40,225.65 102.00,217.55 105.60,225.65"/></g><g class="el" data-id="p_c_models" data-beat="3" data-kind="path" data-route="M398,296 V240 H250 V218"><path class="track" d="M398,240 H250 V218"/><path class="line" d="M398,240 H250 V218"/><polygon class="arrow" points="246.40,225.65 250.00,217.55 253.60,225.65"/></g><g class="el" data-id="datasets" data-beat="3" data-kind="node" data-pillar="datasets"><rect class="box" x="34" y="168" width="136" height="48" rx="3"/><text class="t-name" x="102" y="197" font-size="16" text-anchor="middle">Open datasets</text></g><g class="el" data-id="models" data-beat="3" data-kind="node" data-pillar="models"><rect class="box" x="182" y="168" width="136" height="48" rx="3"/><text class="t-name" x="250" y="197" font-size="16" text-anchor="middle">Open models</text></g><g class="el" data-id="agents" data-beat="3" data-kind="node" data-pillar="agents"><rect class="box" x="330" y="168" width="136" height="48" rx="3"/><text class="t-name" x="398" y="197" font-size="16" text-anchor="middle">AI agents</text></g><g class="el" data-id="p_c_bench" data-beat="4" data-kind="path" data-route="M398,296 V240 H546 V218"><path class="track" d="M398,240 H546 V218"/><path class="line" d="M398,240 H546 V218"/><polygon class="arrow" points="542.40,225.65 546.00,217.55 549.60,225.65"/></g><g class="el" data-id="p_c_index" data-beat="4" data-kind="path" data-route="M398,296 V240 H694 V218"><path class="track" d="M398,240 H694 V218"/><path class="line" d="M398,240 H694 V218"/><polygon class="arrow" points="690.40,225.65 694.00,217.55 697.60,225.65"/></g><g class="el" data-id="benchmark" data-beat="4" data-kind="node" data-pillar="benchmark"><rect class="box" x="478" y="168" width="136" height="48" rx="3"/><text class="t-name" x="546" y="197" font-size="16" text-anchor="middle">Benchmark</text></g><g class="el" data-id="index" data-beat="4" data-kind="node" data-pillar="index"><rect class="box" x="626" y="168" width="136" height="48" rx="3"/><text class="t-name" x="694" y="197" font-size="16" text-anchor="middle">Open index</text></g><g class="el" data-id="p_e_datasets" data-beat="5" data-kind="path"><path class="track" d="M102,166 V140 H398 V108"/><path class="line" d="M102,166 V140 H398 V108"/></g><g class="el" data-id="p_e_models" data-beat="5" data-kind="path"><path class="track" d="M250,166 V140 H398 V108"/><path class="line" d="M250,166 V140 H398 V108"/></g><g class="el" data-id="p_e_agents" data-beat="5" data-kind="path"><path class="track" d="M398,166 V108"/><path class="line" d="M398,166 V108"/><polygon class="arrow" points="394.40,115.65 398.00,107.55 401.60,115.65"/><text class="t-path" x="406" y="129" font-size="13" text-anchor="start">evidence</text></g><g class="el" data-id="p_e_bench" data-beat="5" data-kind="path"><path class="track" d="M546,166 V140 H398 V108"/><path class="line" d="M546,166 V140 H398 V108"/></g><g class="el" data-id="p_e_index" data-beat="5" data-kind="path"><path class="track" d="M694,166 V140 H398 V108"/><path class="line" d="M694,166 V140 H398 V108"/></g><g class="el" data-id="papers" data-beat="5" data-kind="node" data-pillar="papers"><rect class="box" x="330" y="60" width="136" height="46" rx="3"/><text class="t-name" x="398" y="88" font-size="16" text-anchor="middle">White papers</text></g><g class="el" data-id="p_out" data-beat="6" data-kind="path"><path class="track" d="M792,192 H848"/><path class="line" d="M792,192 H848"/><polygon class="arrow" points="840.35,188.40 848.45,192.00 840.35,195.60"/></g><g class="el" data-id="research" data-beat="6" data-kind="label"><text class="t-name" x="856" y="168" font-size="16" text-anchor="start">Aging and</text><text class="t-name" x="856" y="187" font-size="16" text-anchor="start">longevity</text><text class="t-name" x="856" y="206" font-size="16" text-anchor="start">research</text><text class="t-sub" x="856" y="230" font-size="14" text-anchor="start">faster and</text><text class="t-sub" x="856" y="247" font-size="14" text-anchor="start">more reliable</text></g><g class="tokens"></g></svg>
+<!-- scene:landscape:end -->
+<!-- scene:portrait:start -->
+<svg class="scene-svg" data-layout="portrait" viewBox="0 0 360 486" role="img" aria-label="Researchers who build AI systems and researchers who study aging meet in one open community. Guidelines for how AI is built, evaluated and reported frame the work. Members build and share open datasets, open models and AI agents, a benchmark and an open index of AI systems. Evidence from every resource goes into the white papers, which carry the guidelines. The resources are open to the whole field, to make aging and longevity research faster and more reliable." xmlns="http://www.w3.org/2000/svg"><g class="el" data-id="community" data-beat="1" data-kind="frame" data-pillar="community"><rect class="track" x="4" y="4" width="352" height="416" rx="6"/><rect class="line frame" x="4" y="4" width="352" height="416" rx="6"/><text class="t-name" x="16" y="24" font-size="14" text-anchor="start">Community</text><text class="t-sub" x="98" y="24" font-size="13" text-anchor="start">open individual membership</text></g><g class="el" data-id="members_ai" data-beat="1" data-kind="members" data-side="ai" data-from="-70"><g class="m-shift"><rect class="m-sq m-ai" x="87" y="370" width="9" height="9"/><rect class="m-sq m-ai" x="101" y="370" width="9" height="9"/><rect class="m-sq m-ai" x="115" y="370" width="9" height="9"/><rect class="m-sq m-ai" x="129" y="370" width="9" height="9"/><rect class="m-sq m-ai" x="143" y="370" width="9" height="9"/><rect class="m-sq m-ai" x="157" y="370" width="9" height="9"/><text class="t-name" x="166" y="395" font-size="13" text-anchor="end">Researchers who</text><text class="t-name" x="166" y="410" font-size="13" text-anchor="end">build AI</text></g></g><g class="el" data-id="members_age" data-beat="1" data-kind="members" data-side="age" data-from="70"><g class="m-shift"><rect class="m-sq m-age" x="194.6" y="370.6" width="7.8" height="7.8"/><rect class="m-sq m-age" x="208.6" y="370.6" width="7.8" height="7.8"/><rect class="m-sq m-age" x="222.6" y="370.6" width="7.8" height="7.8"/><rect class="m-sq m-age" x="236.6" y="370.6" width="7.8" height="7.8"/><rect class="m-sq m-age" x="250.6" y="370.6" width="7.8" height="7.8"/><rect class="m-sq m-age" x="264.6" y="370.6" width="7.8" height="7.8"/><text class="t-name" x="194" y="395" font-size="13" text-anchor="start">Researchers who</text><text class="t-name" x="194" y="410" font-size="13" text-anchor="start">study aging</text></g></g><g class="el" data-id="guidelines" data-beat="2" data-kind="field" data-pillar="guidelines"><rect class="field" x="14" y="36" width="332" height="316" rx="4"/><text class="t-name" x="26" y="59" font-size="16" text-anchor="start">Guidelines</text><text class="t-sub" x="26" y="77" font-size="13" text-anchor="start">how AI is built, evaluated and reported</text></g><g class="el" data-id="p_c_datasets" data-beat="3" data-kind="path"><path class="track" d="M180,366 V358 H42 V148 H67"/><path class="line" d="M180,366 V358 H42 V148 H67"/><polygon class="arrow" points="59.35,144.40 67.45,148.00 59.35,151.60"/></g><g class="el" data-id="p_c_models" data-beat="3" data-kind="path"><path class="track" d="M180,366 V358 H42 V192 H67"/><path class="line" d="M180,366 V358 H42 V192 H67"/><polygon class="arrow" points="59.35,188.40 67.45,192.00 59.35,195.60"/></g><g class="el" data-id="p_c_agents" data-beat="3" data-kind="path"><path class="track" d="M180,366 V358 H42 V236 H67"/><path class="line" d="M180,366 V358 H42 V236 H67"/><polygon class="arrow" points="59.35,232.40 67.45,236.00 59.35,239.60"/></g><g class="el" data-id="datasets" data-beat="3" data-kind="node" data-pillar="datasets"><rect class="box" x="70" y="130" width="150" height="36" rx="3"/><text class="t-name" x="145" y="153" font-size="14" text-anchor="middle">Open datasets</text></g><g class="el" data-id="models" data-beat="3" data-kind="node" data-pillar="models"><rect class="box" x="70" y="174" width="150" height="36" rx="3"/><text class="t-name" x="145" y="197" font-size="14" text-anchor="middle">Open models</text></g><g class="el" data-id="agents" data-beat="3" data-kind="node" data-pillar="agents"><rect class="box" x="70" y="218" width="150" height="36" rx="3"/><text class="t-name" x="145" y="241" font-size="14" text-anchor="middle">AI agents</text></g><g class="el" data-id="p_c_bench" data-beat="4" data-kind="path"><path class="track" d="M180,366 V358 H42 V280 H67"/><path class="line" d="M180,366 V358 H42 V280 H67"/><polygon class="arrow" points="59.35,276.40 67.45,280.00 59.35,283.60"/></g><g class="el" data-id="p_c_index" data-beat="4" data-kind="path"><path class="track" d="M180,366 V358 H42 V324 H67"/><path class="line" d="M180,366 V358 H42 V324 H67"/><polygon class="arrow" points="59.35,320.40 67.45,324.00 59.35,327.60"/></g><g class="el" data-id="benchmark" data-beat="4" data-kind="node" data-pillar="benchmark"><rect class="box" x="70" y="262" width="150" height="36" rx="3"/><text class="t-name" x="145" y="285" font-size="14" text-anchor="middle">Benchmark</text></g><g class="el" data-id="index" data-beat="4" data-kind="node" data-pillar="index"><rect class="box" x="70" y="306" width="150" height="36" rx="3"/><text class="t-name" x="145" y="329" font-size="14" text-anchor="middle">Open index</text></g><g class="el" data-id="p_e_datasets" data-beat="5" data-kind="path"><path class="track" d="M222,148 H280 V122"/><path class="line" d="M222,148 H280 V122"/></g><g class="el" data-id="p_e_models" data-beat="5" data-kind="path"><path class="track" d="M222,192 H280 V122"/><path class="line" d="M222,192 H280 V122"/></g><g class="el" data-id="p_e_agents" data-beat="5" data-kind="path"><path class="track" d="M222,236 H280 V122"/><path class="line" d="M222,236 H280 V122"/><polygon class="arrow" points="276.40,129.65 280.00,121.55 283.60,129.65"/><text class="t-path" x="288" y="200" font-size="13" text-anchor="start">evidence</text></g><g class="el" data-id="p_e_bench" data-beat="5" data-kind="path"><path class="track" d="M222,280 H280 V122"/><path class="line" d="M222,280 H280 V122"/></g><g class="el" data-id="p_e_index" data-beat="5" data-kind="path"><path class="track" d="M222,324 H280 V122"/><path class="line" d="M222,324 H280 V122"/></g><g class="el" data-id="papers" data-beat="5" data-kind="node" data-pillar="papers"><rect class="box" x="226" y="84" width="108" height="36" rx="3"/><text class="t-name" x="280" y="107" font-size="14" text-anchor="middle">White papers</text></g><g class="el" data-id="p_out" data-beat="6" data-kind="path"><path class="track" d="M300,422 V444"/><path class="line" d="M300,422 V444"/><polygon class="arrow" points="303.60,436.35 300.00,444.45 296.40,436.35"/></g><g class="el" data-id="research" data-beat="6" data-kind="label"><text class="t-name" x="352" y="463" font-size="14" text-anchor="end">Aging and longevity research</text><text class="t-sub" x="352" y="479" font-size="13" text-anchor="end">faster and more reliable</text></g><g class="tokens"></g></svg>
+<!-- scene:portrait:end -->
+            </div>
+            <p class="flow-cap" aria-hidden="true"></p>
+            <figcaption class="legend-row">
+              <ul class="legend" aria-label="Legend">
+                <li data-key="ai"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" fill="#14213D"/></svg>Builds AI</li>
+                <li data-key="age"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.75" y="2.75" width="10.5" height="10.5" fill="#FFFFFF" stroke="#14213D" stroke-width="1.5"/></svg>Studies aging</li>
+                <li data-key="contrib"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="3.5" width="9" height="9" fill="#DCE4F0" stroke="#14213D" stroke-width="1.3"/></svg>Contribution</li>
+                <li data-key="result"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="3.5" width="9" height="9" fill="#FFFFFF" stroke="#14213D" stroke-width="1.3"/><rect x="6.5" y="6.5" width="3" height="3" fill="#14213D"/></svg>Evidence</li>
+              </ul>
+            </figcaption>
+          </figure>
+
+          <div class="caption-row">
+            <div class="captions-wrap">
+              <ol class="captions" id="captions">
+                <li>Researchers who build AI systems and researchers who study aging join one open community. Membership is individual and free.</li>
+                <li>Members agree on guidelines for how AI is built, evaluated and reported in aging research.</li>
+                <li>Together they build open resources that any laboratory can use, starting with curated datasets, open models and AI agents.</li>
+                <li>Members also build a benchmark and an open index of AI systems, so that anyone can see what each system has been shown to do.</li>
+                <li>White papers draw on evidence from every resource. They carry the guidelines and the field&rsquo;s shared view of what has been shown and what to build next.</li>
+                <li>Everything the consortium builds is open to the whole field, so that aging and longevity research can become faster and more reliable.</li>
+              </ol>
+              <p class="caption-hover" aria-live="polite"></p>
+            </div>
+            <div class="steps" hidden>
+              <div class="step-buttons" role="group" aria-label="Steps">
+                <button type="button" aria-label="Step 1"></button>
+                <button type="button" aria-label="Step 2"></button>
+                <button type="button" aria-label="Step 3"></button>
+                <button type="button" aria-label="Step 4"></button>
+                <button type="button" aria-label="Step 5"></button>
+                <button type="button" aria-label="Step 6"></button>
+              </div>
+              <span class="step-count" aria-hidden="true">1 of 6</span>
+              <button class="pause" type="button" aria-pressed="false" hidden>Pause<span class="wide"> animation</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pillars" aria-labelledby="pillars-h">
+    <div class="wrap grid">
+      <div class="col-h">
+        <h2 id="pillars-h">Seven pillars</h2>
+      </div>
+      <div class="col-body">
+        <p class="pillars-intro lede-size muted">Each pillar appears in the diagram above.</p>
+        <dl class="pillars">
+        <div class="pillar" data-pillar="community"><dt>Community</dt><dd>Open individual membership for researchers who build AI and researchers who study aging, with credit for logged contributions.</dd></div>
+        <div class="pillar" data-pillar="guidelines"><dt>Guidelines</dt><dd>Agreed rules for how AI studies of aging are built, evaluated and reported, starting with a reporting checklist and a model card.</dd></div>
+        <div class="pillar" data-pillar="datasets"><dt>Open datasets</dt><dd>Public aging data reprocessed and labeled for AI, with documented error rates.</dd></div>
+        <div class="pillar" data-pillar="models"><dt>Open models</dt><dd>Published aging models packaged to run on new data in a common format.</dd></div>
+        <div class="pillar" data-pillar="agents"><dt>AI agents</dt><dd>Software that plans and runs analyses and tests hypotheses, evaluated on the same tasks as models.</dd></div>
+        <div class="pillar" data-pillar="benchmark"><dt>Benchmark</dt><dd>Versioned tasks for comparing AI systems on the same data, which an independent evaluator outside the consortium will score.</dd></div>
+        <div class="pillar" data-pillar="papers"><dt>White papers</dt><dd>An overview of the field and four theme papers that carry the guidelines and the field&rsquo;s shared view. Each releases an open resource, starting with an open index of AI systems for aging.</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="papers" aria-labelledby="papers-h">
+    <div class="wrap grid">
+      <h2 id="papers-h" class="col-h">White papers</h2>
+      <p class="col-body lede-size papers-intro">The white papers carry the consortium&rsquo;s guidelines and the field&rsquo;s shared view. The series will review the evidence for AI in aging research and set priorities for what to build, and each paper will deposit an open resource with a DOI before the journal version appears.</p>
+    </div>
+    <div class="wrap">
+      <ol class="papers" id="paper-list">
+        <li class="paper paper-overview">
+          <span class="theme">Overview</span>
+          <div class="paper-body">
+            <h3>A roadmap for artificial intelligence in aging research</h3>
+            <p>Which aging data exist, which are missing, and which kinds of model have been tested externally, prospectively or in a randomized trial.</p>
+          </div>
+        </li>
+        <li class="paper paper-theme">
+          <span class="theme">Data</span>
+          <div class="paper-body">
+            <h3>Data standards for artificial intelligence in aging research</h3>
+            <p>How aging data should be prepared for AI, and where deep molecular profiles and long follow-up exist in the same people.</p>
+          </div>
+        </li>
+        <li class="paper paper-theme">
+          <span class="theme">Models</span>
+          <div class="paper-body">
+            <h3>Recommendations for building and validating AI models of aging</h3>
+            <p>Whether risk predictions hold up in external and prospective tests, and what that requires of the models.</p>
+          </div>
+        </li>
+        <li class="paper paper-theme">
+          <span class="theme">Agents</span>
+          <div class="paper-body">
+            <h3>Guidelines for AI scientists in aging research</h3>
+            <p>How far interventions nominated by AI agents get toward a measured outcome, and what each agent should report.</p>
+          </div>
+        </li>
+        <li class="paper paper-theme">
+          <span class="theme">Evaluation</span>
+          <div class="paper-body">
+            <h3>Reporting and evaluation guidelines for AI in aging research</h3>
+            <p>What evidence each use of a learned aging measure requires, and how studies should report it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="principles" aria-labelledby="principles-h">
+    <div class="wrap grid">
+      <h2 id="principles-h" class="col-h">How the consortium runs</h2>
+      <div class="col-body principles">
+        <p><strong>Open.</strong> Guidelines, datasets, models, agents, benchmark tasks and results will be public, and each white paper will release its resource before the journal version.</p>
+        <p><strong>Volunteer-run.</strong> Every role in the consortium is unpaid.</p>
+        <p><strong>Free membership.</strong> Membership is individual and free. Members will sign the charter and declare their interests.</p>
+        <p><strong>Credit for contributions.</strong> Work on the guidelines, the resources and the white papers will be logged, and each contributor will be credited for it.</p>
+        <p><strong>Independent evaluation.</strong> Benchmark answers will be held by an evaluator outside the consortium, and developers will not score their own systems.</p>
+        <p class="committee">The founding committee will be announced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section film" id="film" aria-labelledby="film-h">
+    <div class="wrap grid">
+      <h2 id="film-h" class="col-h">The film</h2>
+      <p class="col-body lede-size muted film-intro">The community, the seven pillars and the five white papers in under a minute, with narration. The film starts muted.</p>
+      <div class="span-12 film-frame">
+        <video id="film-video" controls muted preload="none" playsinline poster="assets/film/ai4aging_film_poster.jpg" width="1920" height="1080" aria-label="A short film about the AI for Aging Consortium">
+          <source src="assets/film/ai4aging_film.mp4" type="video/mp4">
+          <track kind="captions" src="assets/film/ai4aging_film_en.vtt" srclang="en" label="English">
+        </video>
+        <button class="film-sound" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 H8 L13 5 V19 L8 15 H4 Z" fill="#FFFFFF"/><path d="M16 9 Q18.5 12 16 15 M18.5 6.5 Q23 12 18.5 17.5" stroke="#FFFFFF" stroke-width="1.6" fill="none"/></svg><span>Turn sound on</span></button>
+        <button class="film-play" type="button" hidden><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#14213D"/><path d="M26 21 L45 32 L26 43 Z" fill="#FFFFFF"/></svg><span>Play the film</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="join" aria-labelledby="join-h">
+    <div class="wrap grid">
+      <h2 id="join-h" class="col-h">Join the consortium</h2>
+      <p class="col-body join-text">Membership opens at the public launch in 2027. We welcome researchers who build AI systems and researchers who study aging, data holders who can share datasets or host a benchmark task, and laboratories that can share intervention results. Members can contribute to the guidelines, the open resources and the white papers.</p>
+      <p class="col-body"><a class="mail-button" href="mailto:keying@stanford.edu">Email keying@stanford.edu</a></p>
+    </div>
+    <footer class="wrap site-footer">
+      <img src="assets/brand/ai4aging_lockup_white.svg" alt="AI for Aging Consortium" width="244" height="41">
+    </footer>
+  </section>
+
+</main>
+
+<script src="js/site.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/scene.js" defer></script>
+</body>
+</html>
