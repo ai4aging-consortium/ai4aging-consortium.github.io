@@ -311,7 +311,7 @@
   var BEAT_SVH = 55;        // scroll length of one beat in the live mode; site.css uses the same 55svh
 
   var DESCRIPTIONS = {
-    community: 'Community. Open individual membership for researchers who build AI and researchers who study aging, with credit for logged contributions.',
+    community: 'Consortium. Leading groups in AI and aging research join by invitation. Open contributors are credited for logged contributions.',
     guidelines: 'Guidelines. Agreed rules for how AI studies of aging are built, evaluated and reported.',
     papers: 'White papers. An overview of the field and four theme papers that carry the guidelines and the field’s shared view.',
     datasets: 'Open datasets. Public aging data reprocessed and labeled for AI, with documented error rates.',
