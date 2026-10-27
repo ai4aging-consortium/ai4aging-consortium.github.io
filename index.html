@@ -153,9 +153,9 @@
         <p class="pillars-intro lede-size muted">Each pillar appears in the diagram above.</p>
         <dl class="pillars">
         <div class="pillar" data-pillar="community"><dt>Consortium</dt><dd>Leading groups in artificial intelligence and aging research join by invitation. Open contributors are credited for logged contributions.</dd></div>
-        <div class="pillar" data-pillar="guidelines"><dt>Guidelines</dt><dd>Agreed rules for how AI studies of aging are built, evaluated and reported, starting with a reporting checklist and a model card.</dd></div>
-        <div class="pillar" data-pillar="datasets"><dt>Open datasets</dt><dd>Public aging data reprocessed and labeled for AI, with documented error rates.</dd></div>
-        <div class="pillar" data-pillar="models"><dt>Open models</dt><dd>Published aging models packaged to run on new data in a common format, each with a model card and baselines scored before release.</dd></div>
+        <div class="pillar" data-pillar="guidelines"><dt>Guidelines</dt><dd>Agreed rules for how AI studies of aging are built, evaluated and reported, starting with a reporting checklist and a model card template.</dd></div>
+        <div class="pillar" data-pillar="datasets"><dt>Open datasets</dt><dd>Public aging data reprocessed and labeled for AI, with documented error rates. Data that cannot be released, such as outcome-linked cohort data, enter only as sealed benchmark tasks.</dd></div>
+        <div class="pillar" data-pillar="models"><dt>Open models</dt><dd>Published aging models packaged in a common format that existing packages can run on new data, each with a model card and baselines scored before release.</dd></div>
         <div class="pillar" data-pillar="agents"><dt>AI agents</dt><dd>Existing AI agents tested on aging research tasks, each with a public card of its results. The consortium does not build its own agents.</dd></div>
         <div class="pillar" data-pillar="benchmark"><dt>Benchmark</dt><dd>Versioned tasks for comparing AI systems on the same data, scored by the consortium with public scoring code. Sealed tasks are hosted by the consortium.</dd></div>
         <div class="pillar" data-pillar="papers"><dt>White papers</dt><dd>An overview of the field and four theme papers that carry the guidelines and the field&rsquo;s shared view. Each releases an open resource, starting with an open index of AI systems for aging.</dd></div>
@@ -167,7 +167,7 @@
   <section class="section" id="papers" aria-labelledby="papers-h">
     <div class="wrap grid">
       <h2 id="papers-h" class="col-h">White papers</h2>
-      <p class="col-body lede-size papers-intro">The white papers carry the consortium&rsquo;s guidelines and the field&rsquo;s shared view. The series will review the evidence for AI in aging research and set priorities for what to build, and each paper will deposit an open resource with a DOI before the journal version appears.</p>
+      <p class="col-body lede-size papers-intro">The white papers carry the consortium&rsquo;s guidelines and the field&rsquo;s shared view. The series will review the evidence for AI in aging research and set priorities for what to build, and each paper will deposit an open resource with a DOI before the journal version appears. The overview comes first, at the public launch in June 2027, and the four theme papers follow about every six months.</p>
     </div>
     <div class="wrap">
       <ol class="papers" id="paper-list">
@@ -176,6 +176,13 @@
           <div class="paper-body">
             <h3>A roadmap for artificial intelligence in aging research</h3>
             <p>Which aging data exist, which are missing, and which kinds of model have been tested externally, prospectively or in a randomized trial.</p>
+          </div>
+        </li>
+        <li class="paper paper-theme">
+          <span class="theme">Evaluation</span>
+          <div class="paper-body">
+            <h3>Reporting and evaluation guidelines for AI in aging research</h3>
+            <p>What evidence each use of a learned aging measure requires, and how studies should report it.</p>
           </div>
         </li>
         <li class="paper paper-theme">
@@ -199,13 +206,6 @@
             <p>How far interventions nominated by AI agents get toward a measured outcome, and what each agent should report.</p>
           </div>
         </li>
-        <li class="paper paper-theme">
-          <span class="theme">Evaluation</span>
-          <div class="paper-body">
-            <h3>Reporting and evaluation guidelines for AI in aging research</h3>
-            <p>What evidence each use of a learned aging measure requires, and how studies should report it.</p>
-          </div>
-        </li>
       </ol>
     </div>
   </section>
@@ -214,7 +214,7 @@
     <div class="wrap grid">
       <h2 id="principles-h" class="col-h">How the consortium runs</h2>
       <div class="col-body principles">
-        <p><strong>Open outputs.</strong> Everything the consortium produces is released openly, including guidelines, white papers, datasets, models, tools, the open index and benchmark results. Each white paper will release its resource before the journal version.</p>
+        <p><strong>Open outputs.</strong> Everything the consortium produces is released openly, including guidelines, white papers, datasets, models, tools, the open index and benchmark results. Each white paper will release its resource before the journal version. Answers to sealed benchmark tasks stay sealed until a round closes and its results are published.</p>
         <p><strong>Members by invitation.</strong> Members are leading groups in artificial intelligence and aging research. The Founding Scientific Committee nominates and approves new members, and committee terms rotate. Members sign the charter and declare their interests.</p>
         <p><strong>Open to contributors.</strong> Researchers and data holders outside the membership can contribute data, benchmark tasks, models and sections of the white papers. Each contribution is logged and credited.</p>
         <p><strong>Volunteer-run.</strong> Every role in the consortium is unpaid.</p>
@@ -242,7 +242,7 @@
   <section class="join" id="join" aria-labelledby="join-h">
     <div class="wrap grid">
       <h2 id="join-h" class="col-h">Get involved</h2>
-      <p class="col-body join-text">Contributors are welcome now. Researchers, data holders and laboratories can contribute datasets, benchmark tasks, models, intervention results and sections of the white papers, and each contribution is credited. Members join by invitation, on nomination and approval by the Founding Scientific Committee. Everything the consortium produces is released openly.</p>
+      <p class="col-body join-text">Contributors are welcome now. Researchers, data holders and laboratories can contribute datasets, benchmark tasks, models, intervention results and sections of the white papers, and each contribution is credited. Data that cannot be shared openly can be contributed as a sealed benchmark task, which the consortium hosts. Members join by invitation, on nomination and approval by the Founding Scientific Committee. Everything the consortium produces is released openly.</p>
       <p class="col-body"><a class="mail-button" href="mailto:keying@stanford.edu">Email keying@stanford.edu</a></p>
     </div>
     <footer class="wrap site-footer">
